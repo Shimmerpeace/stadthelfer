@@ -3,12 +3,7 @@
 import { useFilterStore } from "@/lib/useFilterStore";
 import type { Category } from "@/lib/types";
 
-const categories: Category[] = [
-  "service",
-  "event",
-  "rental",
-  "community",
-];
+const categories: Category[] = ["service", "event", "rental", "community"];
 
 export function Filters() {
   const {
@@ -33,9 +28,7 @@ export function Filters() {
 
       <select
         value={category}
-        onChange={(event) =>
-          setCategory(event.target.value as Category | "")
-        }
+        onChange={(event) => setCategory(event.target.value as Category | "")}
         className="rounded-lg border px-3 py-2 text-sm outline-none focus:border-blue-500"
       >
         <option value="">All categories</option>

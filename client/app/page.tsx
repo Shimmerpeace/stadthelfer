@@ -30,7 +30,7 @@ export default function HomePage() {
       if (city) params.set("city", city);
 
       const { data } = await api.get<ListingsResponse>(
-        `/listings?${params.toString()}`
+        `/listings?${params.toString()}`,
       );
 
       return data;
@@ -46,8 +46,8 @@ export default function HomePage() {
         </h1>
 
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-blue-100 sm:text-base lg:text-lg">
-          Discover trusted local help, community activities, rentals, and
-          events across Dortmund and North Rhine-Westphalia.
+          Discover trusted local help, community activities, rentals, and events
+          across Dortmund and North Rhine-Westphalia.
         </p>
       </section>
 
