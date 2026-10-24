@@ -50,11 +50,11 @@ cd stadthelfer
 ### 2. Set up the backend
 
 
-cd server
-npm install
+`cd server`
+`npm install`
 
 
-Create a `.env` file inside the `server` folder:
+- Create a `.env` file inside the `server` folder:
 
 
 PORT=5000
@@ -63,19 +63,19 @@ JWT_SECRET=your_secret_key
 CLIENT_URL=http://localhost:3000
 
 
-Add demo data to the database:
+- Add demo data to the database:
 
 
-npm run seed
+`npm run seed`
 
 
-Start the backend:
+- Start the backend:
 
 
-npm run dev
+`npm run dev`
 
 
-The API will run on:
+- The API will run on:
 
 
 http://localhost:5000
@@ -83,26 +83,26 @@ http://localhost:5000
 
 ### 3. Set up the frontend
 
-Open a second terminal:
+- Open a second terminal:
 
 
-cd client
-npm install
+`cd client`
+`npm install`
 
 
-Create a `.env.local` file inside the `client` folder:
+- Create a `.env.local` file inside the `client` folder:
 
 
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
 
-Start the frontend:
+- Start the frontend:
 
 
-npm run dev
+`npm run dev`
 
 
-Then open:
+- Then open:
 
 
 http://localhost:3000
@@ -136,7 +136,7 @@ http://localhost:3000
 
 ## Project Structure
 
-
+```text
 stadthelfer/
 ├─ client/
 │  ├─ app/
@@ -152,7 +152,7 @@ stadthelfer/
 │  │  └─ index.ts
 │  └─ package.json
 └─ README.md
-
+```
 
 ## What I Learned
 
